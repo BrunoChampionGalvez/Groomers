@@ -40,7 +40,7 @@ const validateRegister = (req: Request, res: Response, next: NextFunction) => {
     if (!username) {
         return res.status(400).json({ message: "Error. Falta el nombre de usuario" });
     } else {
-        if (username.length <= 5) {
+        if (username.length < 5) {
             return res.status(400).json({ message: "Error. El nombre de usuario debe contener mínimo 6 caractéres." });
         }
     }
