@@ -26,8 +26,8 @@ function validarDatos(datos) {
         resultado.nDni = 'Debe tener 4 dígitos como mínimo.'
     }
 
-    if (!datos.username || datos.username.length < 6) {
-        resultado.username = 'Debe tener al menos 6 caracteres.';
+    if (!datos.username || datos.username.length < 5) {
+        resultado.username = 'Debe tener al menos 5 caracteres.';
     }
 
     if (!datos.password || datos.password.length < 8) {
